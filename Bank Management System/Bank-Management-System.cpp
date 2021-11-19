@@ -79,6 +79,8 @@ int main()
     Bank obj;  
     do
     {
+        system("cls");  
+        system("color 0B");    
         cout<<"------------------------------------------------------"<<endl;
         cout<<" 1) Open Account: \n";  
         cout<<" 2) Deposite Money: \n";
@@ -93,23 +95,32 @@ int main()
         {
             case 1 :
                 cout<<" 1) Open Account: \n";  
+                system("cls");
                 obj.open_account();
+                  
                 break;  
             case 2 :
                 cout<<" 2) Deposite Money: \n";  
+                system("cls");
                 obj.deposite_money();
+                  
                 break;
             case 3 :
                 cout<<" 3) Withdraw Money: \n";  
+                 system("cls");
                 obj.withdraw_money();
+                 
                 break;
             case 4 :
-                cout<<" 4) Display Account: \n";      
+                cout<<" 4) Display Account: \n";  
+                system("cls");    
                 obj.display_account();
+                  
                 break;
             case 5 :
                 if(ch == 5)
-                {
+                {   
+                    cout<<" Program Exited Successfully !! "<<endl;  
                     exit(1);
                 }
             default: 
@@ -117,10 +128,11 @@ int main()
 
         } 
 
-        cout<<"\n Do you want to Select Next Option(Y/N) : "<<endl;  
+        cout<<"\n Do you want to Select Next Option(Y/N) : "<<endl;    
         x = getch();  
         if(x == 'n' || x == 'N')
         {
+            cout<<" Program Exited Successfully !! "<<endl;
             exit(0);
         }    
 
